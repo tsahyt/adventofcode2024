@@ -1,0 +1,19 @@
+cabal-version:      3.0
+name:               adventofcode2024
+version:            0.1.0.0
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Paul Ogris
+maintainer:         paul@tsahyt.com
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable day01
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1, containers
+    hs-source-dirs:   day01
+    default-language: GHC2021
