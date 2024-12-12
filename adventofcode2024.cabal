@@ -87,3 +87,10 @@ executable day11
     build-depends:    base ^>=4.17.2.1, MemoTrie
     hs-source-dirs:   day11
     default-language: GHC2021
+
+executable day12
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1, containers
+    hs-source-dirs:   day12
+    default-language: GHC2021
