@@ -101,3 +101,10 @@ executable day13
     build-depends:    base ^>=4.17.2.1, containers
     hs-source-dirs:   day13
     default-language: GHC2021
+
+executable day14
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1, containers
+    hs-source-dirs:   day14
+    default-language: GHC2021
