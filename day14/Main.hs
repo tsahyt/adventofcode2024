@@ -48,6 +48,9 @@ quadrant m n p =
 part1 :: [Robot] -> Int
 part1 = product . map length . group . sort . mapMaybe (quadrant 101 103 . move 100)
 
+-- Assume that topaz generates the puzzle input such that the christmas tree is
+-- already there, then runs the robots backwards for some random number of
+-- steps. Moreover, in that starting position no two robots occupy the same cell.
 part2 :: [Robot] -> Int
 part2 xs = fst . head . dropWhile positionsDiffer . zip [0..] . iterate (map $ step 101 103) $ xs
   where
